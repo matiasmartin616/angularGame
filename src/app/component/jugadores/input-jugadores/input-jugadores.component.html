@@ -1,0 +1,16 @@
+<h2>Añade un jugador</h2>
+<div class="input-group">
+    <input type="text" 
+        class="form-control rounded" 
+        placeholder="Nombre" 
+        aria-describedby="search-addon"
+        #nombre
+    />
+    <button 
+        type="button" 
+        class="btn btn-outline-primary" 
+        (click)="enviarJugador(nombre.value)"
+    >Añadir</button>
+</div>
+<p > {{mensajeError}}</p>
+<hr>
